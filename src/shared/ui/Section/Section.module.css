@@ -1,0 +1,12 @@
+.section {
+  padding-block: var(--space-3xl);
+  scroll-margin-top: 90px;
+}
+
+.bordered {
+  border-top: 1px solid var(--color-border);
+}
+
+.header {
+  margin-bottom: var(--space-2xl);
+}

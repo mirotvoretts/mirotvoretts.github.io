@@ -1,0 +1,82 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-nav);
+  border-bottom: 1px solid transparent;
+  background-color: transparent;
+  transition:
+    background-color var(--dur-mid) var(--ease-out),
+    border-color var(--dur-mid) var(--ease-out);
+}
+
+.header[data-solid='true'] {
+  background-color: color-mix(in srgb, var(--color-paper) 94%, transparent);
+  border-bottom-color: var(--color-border);
+  backdrop-filter: blur(8px) saturate(120%);
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.6em;
+  font-family: var(--font-serif);
+  font-size: var(--step-1);
+  color: var(--color-ink);
+}
+
+.brandRole {
+  font-family: var(--font-sans);
+  font-size: var(--step--1);
+  letter-spacing: 0.02em;
+  color: var(--color-muted);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.anchors {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.link {
+  font-family: var(--font-sans);
+  font-size: var(--step--1);
+  letter-spacing: 0.02em;
+  color: var(--color-graphite);
+  transition: color var(--dur-fast) var(--ease-out);
+}
+
+.link:hover {
+  color: var(--color-ink);
+}
+
+.active {
+  color: var(--color-ink);
+}
+
+.github {
+  color: var(--color-accent);
+}
+
+@media (max-width: 720px) {
+  .anchors {
+    display: none;
+  }
+  .brandRole {
+    display: none;
+  }
+}

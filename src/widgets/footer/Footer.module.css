@@ -1,0 +1,24 @@
+.footer {
+  border-top: 1px solid var(--color-border);
+  padding-block: var(--space-xl);
+}
+
+.row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.name {
+  font-family: var(--font-serif);
+  font-size: var(--step-1);
+  color: var(--color-ink);
+}
+
+.meta {
+  font-family: var(--font-sans);
+  font-size: var(--step--1);
+  color: var(--color-muted);
+}

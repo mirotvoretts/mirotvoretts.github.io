@@ -1,0 +1,25 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  max-width: var(--container-narrow);
+}
+
+.index {
+  font-family: var(--font-sans);
+  font-size: var(--step--1);
+  letter-spacing: 0.02em;
+  color: var(--color-accent);
+}
+
+.title {
+  font-size: var(--step-3);
+}
+
+.lead {
+  font-family: var(--font-sans);
+  font-size: var(--step-1);
+  line-height: 1.5;
+  color: var(--color-graphite);
+  max-width: var(--measure);
+}

@@ -1,0 +1,22 @@
+.more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55em;
+  margin-top: var(--space-xl);
+  font-family: var(--font-sans);
+  font-size: var(--step-0);
+  color: var(--color-ink);
+  transition: color var(--dur-fast) var(--ease-out);
+}
+
+.more:hover {
+  color: var(--color-accent);
+}
+
+.arrow {
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+
+.more:hover .arrow {
+  transform: translateX(5px);
+}
